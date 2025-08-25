@@ -20,4 +20,9 @@ jobs:
           python-version: '3.13'
       - run: pip install pytest
       - run: cd test
-      - run: pytest
+
+      - shell: bash
+        env:
+          TEST_SECRET: ${{ secrets.TEST_SECRET }}
+        run: |
+          pytest
