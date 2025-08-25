@@ -1,5 +1,5 @@
 # https://www.youtube.com/watch?v=uFcXrWT4f80
-name: Run tests
+name: Run tests on pr
 
 on:
   pull_request:
