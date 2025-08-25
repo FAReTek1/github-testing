@@ -1,8 +1,10 @@
 # https://www.youtube.com/watch?v=uFcXrWT4f80
-name: Run tests on pr
+name: Run tests
 
 on:
   pull_request:
+    branches: ['master']
+  push:
     branches: ['master']
   workflow_dispatch:
 
